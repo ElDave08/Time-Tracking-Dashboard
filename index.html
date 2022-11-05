@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <div class="main-container">
+    <div class="User">
+      <div class="profile">
+        <div class="picture-container">
+          <img class="picture" src="images\image-jeremy.png">
+        </div>
+        <div class="info">
+          
+          Report for
+          <span>Jeremy Robson</span>
+        </div>
+      </div>
+      <div class="button-area">
+        <button class="D-btn selected">Daily</button>
+        <button class="W-btn non-selected">Weekly</button>
+        <button class="M-btn non-selected">Monthly</button>
+      </div>
+    </div>
+
+    <div class="Card-Work Card">
+      <div class="card-pic-container"><img class="card-pic" src="images\icon-work.svg"></div>
+      <div class="text">
+        <div class="subt">
+          Work 
+          <img src="images\icon-ellipsis.svg">
+        </div>
+        <div class="hours daily">
+          <span>5hrs</span>
+          <!-- daily -->
+          Last Day - 7hrs
+          <!-- daily -->
+        </div>
+
+        <div class="hours weekly hidden">
+          <span>32hrs</span>
+          <!-- weekly -->
+          Last Week - 36hrs
+          <!-- weekly -->
+        </div>
+
+        <div class="hours monthly hidden">
+          <span>103hrs</span>
+          <!-- monthly -->
+          Last Month - 128hrs
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="Card-Play Card">
+      <div class="card-pic-container"><img class="card-pic" src="images\icon-play.svg"></div>
+      <div class="text">
+        <div class="subt">
+          Play 
+          <img src="images\icon-ellipsis.svg">
+        </div>
+        <div class="hours daily">
+          <span>1hr</span>
+          <!-- daily -->
+          Last Day - 2hrs
+          <!-- daily -->
+        </div>
+
+        <div class="hours weekly hidden">
+          <span>10hrs</span>
+          <!-- weekly -->
+          Last Week - 8hrs
+          <!-- weekly -->
+        </div>
+
+        <div class="hours monthly hidden">
+          <span>23hrs</span>
+          <!-- monthly -->
+          Last Month - 29hrs
+          <!-- monthly -->
+        </div>
+
+      </div>
+    </div>
+    <div class="Card-Study Card">
+      <div class="card-pic-container"><img class="card-pic" src="images\icon-study.svg"></div>
+      <div class="text">
+        <div class="subt">
+          Study 
+          <img src="images\icon-ellipsis.svg">
+        </div>
+        <div class="hours daily">
+          <span>0hrs</span>
+          <!-- daily -->
+          Last Day - 1hr
+          <!-- daily -->
+        </div>
+
+        <div class="hours weekly hidden">
+          <span>4hrs</span>
+          <!-- weekly -->
+          Last Week - 7hrs
+          <!-- weekly -->
+        </div>
+        <div class="hours monthly hidden">
+          <span>13hrs</span>
+          <!-- monthly -->
+          Last Month - 19hrs
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="Card-Exercise Card">
+      <div class="card-pic-container"><img class="card-pic" src="images\icon-exercise.svg"></div>
+      <div class="text">
+        <div class="subt">
+          Exercise 
+          <img src="images\icon-ellipsis.svg">
+        </div>
+        <div class="hours daily">
+          <span>1hr</span>
+          <!-- daily -->
+          Last Day - 1hr
+          <!-- daily -->
+        </div>
+        <div class="hours weekly hidden">
+          <span>4hrs</span>
+          <!-- weekly -->
+          Last Week - 5hrs
+          <!-- weekly -->
+        </div>
+        <div class="hours monthly hidden">
+          <span>11hrs</span>
+          <!-- monthly -->
+          Last Month - 18hrs
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="Card-Social Card">
+      <div class="card-pic-container"><img class="card-pic" src="images\icon-social.svg"></div>
+      <div class="text">
+        <div class="subt">
+          Social 
+          <img src="images\icon-ellipsis.svg">
+        </div>
+        <div class="hours daily">
+          <span>1hr</span>
+          <!-- daily -->
+          Last Day - 3hrs
+          <!-- daily -->
+        </div>
+        <div class="hours weekly hidden">
+          <span>5hrs</span>
+          <!-- weekly -->
+          Last Week - 10hrs
+          <!-- weekly -->
+        </div>
+        <div class="hours monthly hidden">
+          <span>21hrs</span>
+          <!-- monthly -->
+          Last Month - 23hrs
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="Card-Selfcare Card">
+      <div class="card-pic-container"><img class="card-pic" src="images\icon-self-care.svg"></div>
+      <div class="text">
+        <div class="subt">
+          Self Care 
+          <img src="images\icon-ellipsis.svg">
+        </div>
+        <div class="hours daily">
+          <span>0hrs</span>
+          <!-- daily -->
+          Last Day - 1hr
+          <!-- daily -->
+        </div>
+        <div class="hours weekly hidden">
+          <span>2hrs</span>
+          <!-- weekly -->
+          Last Week - 2hrs
+          <!-- weekly -->
+        </div>
+        <div class="hours monthly hidden">
+          <span>7hrs</span>
+          <!-- monthly -->
+          Last Month - 11hrs
+          <!-- monthly -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">David</a>.
+  </div>
+<script src="codigo.js"></script>
+</body>
+
+</html>

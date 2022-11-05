@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik',sans-serif;
+}
+
+
+.main-container {
+    height: 400px;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 180px);
+    grid-template-columns: repeat(4, 250px);
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.User {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 5%;
+    width: 200px;
+    height: 360px;
+}
+
+.profile {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 5%;
+    padding: 20px;
+    width: auto;
+    height: 220px;
+
+}
+
+.picture-container {
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    border: #fff 2px solid;
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    object-fit: contain;
+}
+
+.info {
+    bottom: 5px;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile span {
+    font-size: 28px;
+    color: #fff;
+    display: block;
+    /*font-family: 'Rubik';*/
+}
+
+.button-area {
+    padding: 10px;
+}
+
+.User button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin: 5px; 
+}
+
+.User button:hover {
+    color: #fff;
+}
+
+
+.Card {
+    background-color: #666;
+    height: 170px;
+    margin: 7px;
+    border-radius: 5%;
+    width: 220px;
+
+    position: relative;
+    display: flex;
+
+}
+
+.card-pic-container {
+    height: 50px;
+    z-index: 20;
+    position: relative;
+    left: 160px;
+
+}
+
+.card-pic {
+    object-fit: cover;
+    z-index: 20;
+    height: 100%;
+}
+
+.text {
+    background-color: hsl(235, 46%, 20%);
+    padding: 10px;
+    border-radius: 5%;
+    bottom: 0;
+    color: #fff;
+    height: 114px;
+    width: 200px;
+    z-index: 40;
+    position: absolute;
+}
+
+.text img {
+    width: 15px;
+}
+
+.xd {
+    color: hsl(226, 43%, 10%);
+    color: hsl(235, 46%, 20%);
+    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
+    color: hsl(246, 80%, 60%);
+}
+
+.hours {
+    padding: 5px;
+    color: hsl(236, 100%, 87%);
+    left: 15px;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Rubik',sans-serif;
+}
+
+.hours span {
+    display: block;
+    font-size: 45px;
+    color: #fff;
+
+}
+
+.Card-Work {
+    width: 220px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.Card-Play {
+
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.Card-Study {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.Card-Exercise {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.Card-Exercise .card-pic-container {
+    height: 40px;
+    left: 155px;
+}
+
+.Card-Social {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: hsl(264, 64%, 52%);
+}
+
+.Card-Selfcare {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    left: 40vw;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+.hidden {
+    display: none;
+}
+.non-selected{
+    color: hsl(235, 45%, 61%);
+}
+.selected{
+    color: #fff;
+}
+
+.text:hover{
+    background-color: hsl(246, 60%, 60%);
+
+    transition: 1s;
+}
+
+.subt{
+    margin: 5px;
+    position: relative;
+    left: 12px;
+    font-family: 'Rubik',sans-serif;
+}
+
+.subt img{
+    position: absolute;
+    left: 155px;
+    width: 20px;
+}
+
+@media only screen and (max-width: 375px){
+    .main-container {
+        align-content: center;
+        height: 1280px;
+        width: 300px;
+        margin: auto;
+        position: absolute;
+        top: 50px;
+        display: grid;
+        grid-template-rows: 200px repeat(6, 180px);
+        grid-template-columns: repeat(1, 300px);
+    }
+    .User{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 300px;
+        height: 180px;
+    }
+    .profile {
+        padding: 20px;
+        width: auto;
+        height: 100px;
+
+    }
+    .profile span{
+        display: inline-block;
+    }
+    .picture-container {
+        height: 65px;
+        width: 60px;
+        border-radius: 100%;
+        border: #fff 2px solid;
+        display: inline-block;
+    }
+    .info {
+        color: hsl(236, 100%, 87%);
+        display: inline-block;
+        width: 180px;
+    }
+    .button-area {
+        padding: 10px;
+        justify-items: auto;
+    }  
+    .User button {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        margin: 5px; 
+        font-size: 15px;
+    } 
+    .Card{
+        width: 300px;
+        height: 160px;
+    }
+
+    .card-pic-container {
+        height: 50px;
+        z-index: 20;
+        position: relative;
+        left: 200px;
+    }
+    
+    .card-pic {
+        object-fit: cover;
+        z-index: 20;
+        height: 100%;
+    }
+
+    .text{
+        background-color: hsl(235, 46%, 20%);
+        padding: 10px;
+        border-radius: 5%;
+        bottom: 0;
+        color: #fff;
+        height: 114px;
+        width: 280px;
+        z-index: 40;
+        position: absolute;
+    }
+    .hours {
+        padding: 5px;
+        color: hsl(236, 100%, 87%);
+        left: 15px;
+        position: relative;
+        font-size: 15px;
+        font-family: 'Rubik',sans-serif;
+    }
+    
+    .hours span {
+        display: inline-block;
+        font-size: 45px;
+        color: #fff;
+        margin-right: 15px;
+    
+    }
+    .subt{
+        margin: 5px;
+        position: relative;
+        left: 12px;
+        font-family: 'Rubik',sans-serif;
+    }
+    
+    .subt img{
+        position: absolute;
+        left: 235px;
+        width: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .Card-Work{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .Card-Play{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .Card-Study{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .Card-Exercise{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .Card-Social{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .Card-Selfcare{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+}
+
+
+@media only screen and (max-width: 990px) and (min-width:375px) {
+    .main-container {
+        
+        height: 720px;
+        width: 440px;
+        margin: 30px, 30px;
+        position: absolute;
+        left: 15%;
+        top: 50px;
+        display: grid;
+        grid-template-rows: repeat(4, 190px);
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .User {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 5%;
+        width: 200px;
+        height: 350px;
+    }
+    .Card-Work{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .Card-Play{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .Card-Study{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .Card-Exercise{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .Card-Social{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .Card-Selfcare{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
